@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Translatable</title>
+
+  <script type="module" src="/build/translatable.esm.js"></script>
+  <script nomodule src="/build/translatable.js"></script>
+
+</head>
+
+<body>
+  <translatable-container page-title="Translatable Demo"
+    firebase-config-path="https://firebasestorage.googleapis.com/v0/b/translatable-oss.appspot.com/o/init.json?alt=media">
+    <p class="translatable" style="width: 400px">
+      <translatable-text hash="27539a95ee1fae5b2a162a4178d3eed169cbfc77" original-text="Hello `translators`"
+        class="paragraph" file="./docs/nyan.md">Hello <code>translators</code></translatable-text>
+    </p>
+  </translatable-container>
+
+</body>
+
+</html>

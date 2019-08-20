@@ -1,0 +1,43 @@
+@import "../../ionic";
+
+ion-textarea.original {
+  --background: #eee;
+
+  textarea {
+    height: 300px;
+    cursor: text;
+  }
+}
+
+ion-textarea.translated {
+  --background: #eee;
+
+  textarea {
+    height: 300px;
+  }
+}
+
+ion-col.actions {
+  text-align: right;
+}
+
+ion-content.container {
+  position: relative;
+}
+
+ion-content.history {
+  max-height: 300px;
+}
+
+.sign-in-required-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 90000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}

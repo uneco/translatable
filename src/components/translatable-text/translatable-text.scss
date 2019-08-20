@@ -1,0 +1,59 @@
+@import "../../ionic";
+
+:host {
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  background-color: rgba(255, 0, 0, 0.1);
+  position: relative;
+}
+
+:host(.preparing) {
+  color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 118, 181, 0.5);
+}
+
+:host(.translated) {
+  background-color: rgba(175, 237, 198, 0.5);
+}
+
+:host(:hover) {
+  background-color: rgba(255, 255, 0, 0.5);
+
+  .translate-button-area {
+    display: flex;
+  }
+}
+
+:host(.paragraph) {
+  display: block;
+}
+
+:host(.heading) {
+  display: block;
+}
+
+:host(.list-item) {
+  display: block;
+}
+
+.translate-button-area {
+  display: none;
+  position: absolute;
+  z-index: 20000;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.translate-button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  background-color: #4881f7;
+  border-radius: 4px;
+}

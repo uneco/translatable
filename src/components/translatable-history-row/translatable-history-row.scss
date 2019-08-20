@@ -1,0 +1,26 @@
+@import "../../ionic";
+
+.diff {
+  .added {
+    background-color: rgb(159, 240, 189);
+    color: rgb(15, 62, 32);
+  }
+
+  .removed {
+    background-color: rgb(240, 159, 159);
+    color: rgb(62, 15, 15);
+    text-decoration: line-through;
+  }
+}
+
+.metadata {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  .timestamp {
+    font-size: 0.9em;
+    color: #666;
+    margin-right: 10px;
+  }
+}
