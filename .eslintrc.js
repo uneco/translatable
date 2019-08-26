@@ -1,10 +1,8 @@
 module.exports = {
   "root": true,
   "env": {
-    browser: true,
-  },
-  "globals": {
-    "monaco": true,
+    "browser": true,
+    "jest": true,
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
